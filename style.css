@@ -5,6 +5,8 @@
 }
 
 body{
+    background-image: url(img/temp.png);
+    background-repeat: round;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +15,7 @@ body{
 
 .caixa{
     max-width: 450px;
-    background-color: purple;
+    background-color: midnightblue;
     border-radius: 3%;
     padding: 20px;
 }
