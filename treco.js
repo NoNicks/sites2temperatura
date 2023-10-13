@@ -1,4 +1,4 @@
-let celciusInput = document.querySelector('#celcius > input')
+let celsiusInput = document.querySelector('#celcius > input')
 let fahrenheitInput = document.querySelector('#fahrenheit > input')
 let kelvinInput = document.querySelector('#kelvin > input')
 let rankineInput = document.querySelector('#rankine > input')
@@ -9,8 +9,8 @@ function roundNumber(number){
     return Math.round(number*100)/100
 }
 
-celciusInput.addEventListener('input', function(){
-    let cTemp = parseFloat(celciusInput.value)
+celsiusInput.addEventListener('input', function(){
+    let cTemp = parseFloat(celsiusInput.value)
     let fTemp = (cTemp*(9/5)) + 32
     let kTemp = cTemp + 273.15
     let rTemp = (cTemp*9/5) + 491.67
@@ -26,7 +26,7 @@ fahrenheitInput.addEventListener('input', function(){
     let kTemp = (fTemp - 32) * (5/9) + 273.15
     let rTemp = fTemp + 491.67
 
-    celciusInput.value = roundNumber(cTemp)
+    celsiusInput.value = roundNumber(cTemp)
     kelvinInput.value = roundNumber(kTemp)
     rankineInput.value = roundNumber(rTemp)
 })
@@ -37,7 +37,7 @@ kelvinInput.addEventListener('input', function(){
     let fTemp = (kTemp - 273.15) * (9/5) + 32
     let rTemp = kTemp*1.8
 
-    celciusInput.value = roundNumber(cTemp)
+    celsiusInput.value = roundNumber(cTemp)
     fahrenheitInput.value = roundNumber(fTemp)
     rankineInput.value = roundNumber(rTemp)
 })
@@ -48,13 +48,13 @@ rankineInput.addEventListener('input', function(){
     let fTemp = rTemp - 459.67
     let kTemp = (rTemp * 5/9)
 
-    celciusInput.value = roundNumber(cTemp)
+    celsiusInput.value = roundNumber(cTemp)
     fahrenheitInput.value = roundNumber(fTemp)
     kelvinInput.value = roundNumber(kTemp)
 })
 
 btn.addEventListener('click', ()=>{
-    celciusInput.value = ""
+    celsiusInput.value = ""
     fahrenheitInput.value = ""
     kelvinInput.value = ""
     rankineInput.value = ""

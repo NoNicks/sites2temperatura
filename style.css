@@ -37,7 +37,7 @@ h1{
     font-size: medium;
 }
 
-#celcius, #fahrenheit, #kelvin, #rankine{
+#celsius, #fahrenheit, #kelvin, #rankine{
     display: flex;
     justify-content: center;
     align-items: center;
