@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa{
+    background-color: purple;
+    border-radius: 3%;
+    padding: 3%;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+h1{
+    color: white;
+}
+
+#celcius, #fahrenheit, #kelvin, #rankine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+input{
+    display: flex;
+    height: 50px;
+    font-size: xx-large;
+    text-align: center;
+    border: none;
+}
+
