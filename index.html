@@ -7,6 +7,8 @@
 </head>
 <body>
     <div class="caixa">
+
+        
         <div id="titulo">
             <h1>Conversor de temperatura</h1>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
@@ -14,26 +16,37 @@
                 <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z"/>
               </svg>
         </div>
+
+
         <div id="celcius">
             <input type="number" placeholder="Celcius">
-            <span style='font-size:20px;'>&#8451;</span>
+            <span id="ic" style='font-size:20px;'>&#8451;</span>
         </div>
+
         <div id="fahrenheit">
             <input type="number" placeholder="Fahrenheit">
-            <span style='font-size:20px;'>&#8457;</span>
+            <span id="ic" style='font-size:20px;'>&#8457;</span>
         </div>
+
         <div id="kelvin">
             <input type="number" placeholder="Kelvin">
-            <span style='font-size:20px;'>&#8490;</span>
+            <span id="ic" style='font-size:20px;'>&#8490;</span>
         </div>
+
         <div id="rankine">
             <input type="number" placeholder="Rankine">
-            <span style='font-size:20px;'>&#8477;</span>
+            <span id="ic" style='font-size:20px;'>&#8477;</span>
         </div>
+
+
         <div class="button">
             <button>Limpar</button>
         </div>
     </div>
+
     
+    <script src="treco.js"></script>
+
+
 </body>
 </html>

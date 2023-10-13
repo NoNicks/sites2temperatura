@@ -12,9 +12,10 @@ body{
 }
 
 .caixa{
+    max-width: 450px;
     background-color: purple;
     border-radius: 3%;
-    padding: 3%;
+    padding: 20px;
 }
 
 #titulo{
@@ -22,10 +23,16 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.bi-thermometer-half{
+    color: white;
 }
 
 h1{
     color: white;
+    font-size: medium;
 }
 
 #celcius, #fahrenheit, #kelvin, #rankine{
@@ -36,10 +43,40 @@ h1{
 }
 
 input{
-    display: flex;
+    flex: 5;
     height: 50px;
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
     border: none;
+    outline: none;
+    padding: 0 10px;
 }
 
+#ic{
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 5px;
+    font-size: xx-large;
+    color: white;
+    background-color: gray;
+}
+
+.button{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background-color: red;
+    color: white;
+}
