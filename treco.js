@@ -22,11 +22,11 @@ celciusInput.addEventListener('input', function(){
 
 fahrenheitInput.addEventListener('input', function(){
     let fTemp = parseFloat(fahrenheitInput.value)
-    let cTemp = (fTemp - 32) * 5/9
-    let kTemp = (fTemp - 32) * 5/9 + 273.15
+    let cTemp = (fTemp - 32) * (5/9)
+    let kTemp = (fTemp - 32) * (5/9) + 273.15
     let rTemp = fTemp + 491.67
 
-    fahrenheitInput.value = roundNumber(cTemp)
+    celciusInput.value = roundNumber(cTemp)
     kelvinInput.value = roundNumber(kTemp)
     rankineInput.value = roundNumber(rTemp)
 })
@@ -51,4 +51,11 @@ rankineInput.addEventListener('input', function(){
     celciusInput.value = roundNumber(cTemp)
     fahrenheitInput.value = roundNumber(fTemp)
     kelvinInput.value = roundNumber(kTemp)
+})
+
+btn.addEventListener('click', ()=>{
+    celciusInput.value = ""
+    fahrenheitInput.value = ""
+    kelvinInput.value = ""
+    rankineInput.value = ""
 })
