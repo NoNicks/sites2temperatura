@@ -1,4 +1,4 @@
-let celsiusInput = document.querySelector('#celcius > input')
+let celsiusInput = document.querySelector('#celsius > input')
 let fahrenheitInput = document.querySelector('#fahrenheit > input')
 let kelvinInput = document.querySelector('#kelvin > input')
 let rankineInput = document.querySelector('#rankine > input')
